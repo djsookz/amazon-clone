@@ -1,0 +1,29 @@
+.link {
+  cursor: pointer;
+  margin-left: 10px;
+}
+.link:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 1024px) {
+  .hidden {
+    display: none;
+  }
+}
+
+.bnav {
+  display: flex;
+  align-items: center;
+  background-color: rgb(37, 37, 56);
+  color: white;
+  padding: 8px;
+  padding-left: 24px;
+}
+.bnav__menu {
+  margin-right: 6px;
+  font-size: 25px;
+}
+.bnav__p {
+  display: flex;
+  align-items: center;
+}
