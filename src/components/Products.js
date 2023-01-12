@@ -24,7 +24,7 @@ const Products = () => {
         return (
           <div className="products__container">
             <p className="product__category">{product.category}</p>
-            <img className="product__image" src={product.image} alt="" />
+            <img className="product__image" src={product.image} alt="product" />
             <h4 className="product__title">{product.title}</h4>
             <div>
               {Array(Math.floor(product.rating.rate))
@@ -56,14 +56,18 @@ const Products = () => {
       <img
         className="home__image__banner2"
         src="https://links.papareact.com/dyz"
-        alt=""
+        alt="banner2"
       />
       <div className="products__section2">
         {productId.slice(4, 5).map((product) => {
           return (
             <div className="products__container">
               <p className="product__category">{product.category}</p>
-              <img className="product__image" src={product.image} alt="" />
+              <img
+                className="product__image"
+                src={product.image}
+                alt="product"
+              />
               <h4 className="product__title">{product.title}</h4>
               <div>
                 {Array(Math.floor(product.rating.rate))
@@ -99,7 +103,7 @@ const Products = () => {
         return (
           <div className="products__container">
             <p className="product__category">{product.category}</p>
-            <img className="product__image" src={product.image} alt="" />
+            <img className="product__image" src={product.image} alt="product" />
             <h4 className="product__title">{product.title}</h4>
             <div>
               {Array(Math.floor(product.rating.rate))

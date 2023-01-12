@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../utils/firebasee";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Testt = () => {
-  const [user, loading] = useAuthState(auth);
+  const [user] = useAuthState(auth);
 
   const googleProvider = new GoogleAuthProvider();
   const GoogleLogin = async () => {
