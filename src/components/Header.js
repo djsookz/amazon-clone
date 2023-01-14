@@ -16,7 +16,6 @@ const Header = () => {
   const GoogleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
-      console.log(result.user);
     } catch (error) {
       console.log(error);
     }
