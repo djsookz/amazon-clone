@@ -53,6 +53,7 @@ const Header = () => {
         <Link to="/" className="header__link">
           <div className="header__option">
             <span className="header__optionLineOne">Your</span>
+
             <span className="header__optionLineTwo">Prime</span>
           </div>
         </Link>
@@ -62,7 +63,11 @@ const Header = () => {
             {!user && (
               <div>
                 <div className="header__optionLineOne">Hello </div>
-                <span onClick={GoogleLogin} className="header__optionLineTwo">
+                <span
+                  id="header__user__image"
+                  onClick={GoogleLogin}
+                  className="header__optionLineTwo"
+                >
                   Sign in
                 </span>
               </div>

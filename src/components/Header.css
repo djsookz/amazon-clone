@@ -93,3 +93,38 @@
     display: none;
   }
 }
+@media only screen and (max-width: 464px) {
+  .header__option .header__optionLineTwo{
+    font-size: 10px;
+  }
+  .header__user__img{
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .header__logo{
+    width: 60px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 420px
+) {
+  .header__option .header__optionLineTwo{
+    font-size: 8px;
+  }
+  .header__user__img{
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 25px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  .header__basketIcon{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .header__logo{
+    width: 50px;
+    
+  }
+}
