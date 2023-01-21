@@ -59,18 +59,6 @@ const Header = () => {
 
         <Link to="/" className="header__link">
           <div className="header__option">
-            {!user && (
-              <div>
-                <div className="header__optionLineOne">Hello </div>
-                <span
-                  id="header__user__image"
-                  onClick={GoogleLogin}
-                  className="header__optionLineTwo"
-                >
-                  Sign in
-                </span>
-              </div>
-            )}
             {user && (
               <div className="header__user">
                 <p className="header__optionLineOne">{user.displayName}</p>

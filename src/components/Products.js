@@ -14,7 +14,6 @@ const Products = () => {
     const data = await fetch("https://fakestoreapi.com/products");
     const results = await data.json();
     setProductId(results);
-    console.log(results);
   };
 
   const [hasPrime] = useState(Math.random() < 0.5);
@@ -22,7 +21,7 @@ const Products = () => {
     <div className="products">
       {productId.slice(0, 4).map((product) => {
         return (
-          <div className="products__container">
+          <div key={product.id} className="products__container">
             <p className="product__category">{product.category}</p>
             <img className="product__image" src={product.image} alt="product" />
             <h4 className="product__title">{product.title}</h4>
@@ -42,6 +41,7 @@ const Products = () => {
               .map((_) => (
                 <div className="product__prime">
                   <img
+                    alt="star"
                     className="product__prime__image"
                     src="https://links.papareact.com/fdw"
                   />
@@ -61,7 +61,7 @@ const Products = () => {
       <div className="products__section2">
         {productId.slice(4, 5).map((product) => {
           return (
-            <div className="products__container">
+            <div key={product.id} className="products__container">
               <p className="product__category">{product.category}</p>
               <img
                 className="product__image"
@@ -85,6 +85,7 @@ const Products = () => {
                 .map((_) => (
                   <div className="product__prime">
                     <img
+                      alt="star"
                       className="product__prime__image"
                       src="https://links.papareact.com/fdw"
                     />
@@ -101,7 +102,7 @@ const Products = () => {
       </div>
       {productId.slice(5, productId.length).map((product) => {
         return (
-          <div className="products__container">
+          <div key={product.id} className="products__container">
             <p className="product__category">{product.category}</p>
             <img className="product__image" src={product.image} alt="product" />
             <h4 className="product__title">{product.title}</h4>
@@ -121,6 +122,7 @@ const Products = () => {
               .map((_) => (
                 <div className="product__prime">
                   <img
+                    alt="star"
                     className="product__prime__image"
                     src="https://links.papareact.com/fdw"
                   />
