@@ -63,7 +63,9 @@ const Header = () => {
           <div className="header__option">
             {user && (
               <div className="header__user">
-                <p className="header__optionLineOne">{user.displayName}</p>
+                <p id="header-userName" className="header__optionLineOne">
+                  {user.displayName}
+                </p>
                 <span
                   onClick={() => auth.signOut()}
                   className="header__optionLineTwo"

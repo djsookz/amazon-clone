@@ -116,15 +116,18 @@
   }
   .header__optionLineTwo {
     transform: translateY(4px);
+    white-space: nowrap;
   }
   #headerAnd {
     display: none;
   }
-  .header__optionLineOne {
+  #header-userName {
     width: 22px;
-    overflow: hidden;
     white-space: nowrap;
+    overflow: hidden;
+    transform: translateX(4px);
   }
+
   .header__user__img {
     margin-left: 20px;
     margin-right: 10px;
