@@ -23,7 +23,7 @@ const SingIn = () => {
         <p>Please Sing in</p>
         <div>
           <Link to="/" onClick={GoogleLogin}>
-            <button>Sing In with Google</button>
+            <button className="singIn-Button">Sing In with Google</button>
           </Link>
         </div>
       </div>

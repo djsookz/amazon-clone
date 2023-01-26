@@ -45,7 +45,9 @@ const Header = () => {
         <Link to="/" className="header__link">
           <div className="header__option">
             <span className="header__optionLineOne">Returns</span>
-            <span className="header__optionLineTwo">& orders</span>
+            <span className="header__optionLineTwo">
+              <span id="headerAnd">&</span> orders
+            </span>
           </div>
         </Link>
 
