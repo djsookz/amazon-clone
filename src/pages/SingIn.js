@@ -17,13 +17,15 @@ const SingIn = () => {
   };
 
   return (
-    <div className="singIn_wrapper">
-      <div className="singIn_text">Welcome to Amazon Clone</div>
-      <p>Please Sing in</p>
-      <div>
-        <Link to="/" onClick={GoogleLogin}>
-          <button>Sing In with Google</button>
-        </Link>
+    <div className="singIn">
+      <div className="singIn-wrapper">
+        <h1 className="singIn_text">Welcome to Amazon Clone</h1>
+        <p>Please Sing in</p>
+        <div>
+          <Link to="/" onClick={GoogleLogin}>
+            <button>Sing In with Google</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
